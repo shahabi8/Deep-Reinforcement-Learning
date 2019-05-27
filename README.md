@@ -8,10 +8,9 @@ But it also comes at a price–the high complexity of controlling such an aircra
 
 The next step in this evolution is to enable quadcopters to autonomously achieve desired control behaviors such as takeoff and landing. You could design these controls with a classic approach (say, by implementing PID controllers). Or, you can use reinforcement learning to build agents that can learn these behaviors on their own.
 ## Instruction
-⋅⋅* task.py: Define task (environment) for reinforcement learning.
-⋅⋅* physics_sim.py: This file contains the simulator for the quadcopter.
-⋅⋅* Replay_buffer.py: Most modern reinforcement learning algorithms benefit from using a replay memory or buffer to store and recall experience tuples.
-⋅⋅* Actor.py DDPG: Actor (Value) Model.
-⋅⋅* Critic.py DDPG: Critic (Value) Model.
-⋅⋅* DDPG.py DDPG agent to put together actor and critic.
-⋅⋅* OUnoise.py Ornstein–Uhlenbeck Noise. Use this process to add some noise to our actions, in order to encourage exploratory behavior. And since our actions translate to force and torque being applied to a quadcopter, we want consecutive actions to not vary wildly. 
+* task.py: Define task (environment) for reinforcement learning.
+* physics_sim.py: This file contains the simulator for the quadcopter.
+* Replay_buffer.py: Most modern reinforcement learning algorithms benefit from using a replay memory or buffer to store and recall experience tuples.
+* Actor.py DDPG: Actor (Value) Model.
+* Critic.py DDPG: Critic (Value) Model.
+* DDPG.py DDPG agent to put together actor and cri* OUnoise.py Ornstein–Uhlenbeck Noise. Use this process to add some noise to our actions, in order to encourage exploratory behavior. And since our actions translate to force and torque being applied to a quadcopter, we want consecutive actions to not vary wildly. 
